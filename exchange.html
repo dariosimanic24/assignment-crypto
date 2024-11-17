@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Exchange</title>
+    <link rel="stylesheet" href="exchange.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="exchange.html">Exchange</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="exchange-container">
+        <section class="exchange-box">
+            <h2>Exchange Cryptocurrency</h2>
+            <form method="post" action="https://jsonplaceholder.typicode.com/posts">
+                <label for="from-currency">From:</label>
+                <select id="from-currency" name="from-currency" required>
+                    <option value="BTC">Bitcoin (BTC)</option>
+                    <option value="ETH">Ethereum (ETH)</option>
+                    <option value="USDT">Tether (USDT)</option>
+                    <option value="SOL">Solana (SOL)</option>
+                    <option value="BNB">Binance Coin (BNB)</option>
+                    <option value="XRP">XRP</option>
+                    <option value="ADA">Cardano (ADA)</option>
+                    <option value="DOGE">Dogecoin (DOGE)</option>
+                    <option value="MATIC">Polygon (MATIC)</option>
+                    <option value="SHIB">Shiba Inu (SHIB)</option>
+                </select>
+
+                <label for="to-currency">To:</label>
+                <select id="to-currency" name="to-currency" required>
+                    <option value="BTC">Bitcoin (BTC)</option>
+                    <option value="ETH">Ethereum (ETH)</option>
+                    <option value="USDT">Tether (USDT)</option>
+                    <option value="SOL">Solana (SOL)</option>
+                    <option value="BNB">Binance Coin (BNB)</option>
+                    <option value="XRP">XRP</option>
+                    <option value="ADA">Cardano (ADA)</option>
+                    <option value="DOGE">Dogecoin (DOGE)</option>
+                    <option value="MATIC">Polygon (MATIC)</option>
+                    <option value="SHIB">Shiba Inu (SHIB)</option>
+                </select>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <button type="submit" id="exchange-button">Exchange</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Dario Simanic - Foundation Of Web Development</p>
+    </footer>
+</body>
+</html>
